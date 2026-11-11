@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="5.0.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v5.0.0(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#FPArithmetic" name="4"/>
+  <lib desc="#Memory" name="5"/>
+  <lib desc="#I/O" name="6"/>
+  <lib desc="#TTL" name="7"/>
+  <lib desc="#TCL" name="8"/>
+  <lib desc="#Base" name="9"/>
+  <lib desc="#BFH-Praktika" name="10"/>
+  <lib desc="#Input/Output-Extra" name="11"/>
+  <lib desc="#Soc" name="12"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool map="Button2" name="Poke Tool"/>
+    <tool map="Button3" name="Menu Tool"/>
+    <tool map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool name="Poke Tool"/>
+    <tool name="Edit Tool"/>
+    <tool name="Wiring Tool"/>
+    <tool name="Text Tool"/>
+    <tool name="Image"/>
+    <sep/>
+    <tool name="Pin"/>
+    <tool name="Pin">
+      <a name="facing" val="west"/>
+      <a name="type" val="output"/>
+    </tool>
+    <sep/>
+    <tool name="NOT Gate"/>
+    <tool name="AND Gate"/>
+    <tool name="OR Gate"/>
+    <tool name="XOR Gate"/>
+    <tool name="NAND Gate"/>
+    <tool name="NOR Gate"/>
+    <sep/>
+    <tool name="D Flip-Flop"/>
+    <tool name="Register"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="main"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(130,260)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="J"/>
+    </comp>
+    <comp lib="0" loc="(130,330)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(130,390)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="K"/>
+    </comp>
+    <comp lib="0" loc="(130,490)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="CLRn"/>
+    </comp>
+    <comp lib="0" loc="(180,540)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="0" loc="(180,560)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="0" loc="(180,580)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="0" loc="(180,600)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="0" loc="(450,540)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(450,560)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(790,270)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Q"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(790,400)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="NQ"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="1" loc="(210,330)" name="NOT Gate"/>
+    <comp lib="1" loc="(290,260)" name="NAND Gate">
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp lib="1" loc="(290,390)" name="NAND Gate">
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp lib="1" loc="(400,280)" name="NAND Gate"/>
+    <comp lib="1" loc="(400,370)" name="NAND Gate">
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp lib="1" loc="(600,280)" name="NAND Gate"/>
+    <comp lib="1" loc="(600,370)" name="NAND Gate"/>
+    <comp lib="1" loc="(710,270)" name="NAND Gate"/>
+    <comp lib="1" loc="(710,400)" name="NAND Gate">
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp loc="(420,540)" name="jk_ff"/>
+    <wire from="(130,260)" to="(230,260)"/>
+    <wire from="(130,330)" to="(160,330)"/>
+    <wire from="(130,390)" to="(230,390)"/>
+    <wire from="(130,490)" to="(310,490)"/>
+    <wire from="(160,330)" to="(160,430)"/>
+    <wire from="(160,330)" to="(180,330)"/>
+    <wire from="(160,430)" to="(510,430)"/>
+    <wire from="(180,540)" to="(200,540)"/>
+    <wire from="(180,560)" to="(200,560)"/>
+    <wire from="(180,580)" to="(200,580)"/>
+    <wire from="(180,600)" to="(200,600)"/>
+    <wire from="(210,210)" to="(210,240)"/>
+    <wire from="(210,210)" to="(780,210)"/>
+    <wire from="(210,240)" to="(230,240)"/>
+    <wire from="(210,330)" to="(220,330)"/>
+    <wire from="(210,410)" to="(210,450)"/>
+    <wire from="(210,410)" to="(230,410)"/>
+    <wire from="(210,450)" to="(760,450)"/>
+    <wire from="(220,280)" to="(220,330)"/>
+    <wire from="(220,280)" to="(230,280)"/>
+    <wire from="(220,330)" to="(220,370)"/>
+    <wire from="(220,370)" to="(230,370)"/>
+    <wire from="(290,260)" to="(340,260)"/>
+    <wire from="(290,390)" to="(340,390)"/>
+    <wire from="(310,370)" to="(310,490)"/>
+    <wire from="(310,370)" to="(340,370)"/>
+    <wire from="(310,490)" to="(630,490)"/>
+    <wire from="(320,300)" to="(320,310)"/>
+    <wire from="(320,300)" to="(340,300)"/>
+    <wire from="(320,310)" to="(450,310)"/>
+    <wire from="(320,330)" to="(320,350)"/>
+    <wire from="(320,330)" to="(420,330)"/>
+    <wire from="(320,350)" to="(340,350)"/>
+    <wire from="(400,280)" to="(420,280)"/>
+    <wire from="(400,370)" to="(450,370)"/>
+    <wire from="(420,280)" to="(420,330)"/>
+    <wire from="(420,280)" to="(490,280)"/>
+    <wire from="(420,540)" to="(450,540)"/>
+    <wire from="(420,560)" to="(450,560)"/>
+    <wire from="(450,310)" to="(450,370)"/>
+    <wire from="(450,370)" to="(490,370)"/>
+    <wire from="(490,260)" to="(490,280)"/>
+    <wire from="(490,260)" to="(540,260)"/>
+    <wire from="(490,370)" to="(490,390)"/>
+    <wire from="(490,390)" to="(540,390)"/>
+    <wire from="(510,300)" to="(510,350)"/>
+    <wire from="(510,300)" to="(540,300)"/>
+    <wire from="(510,350)" to="(510,430)"/>
+    <wire from="(510,350)" to="(540,350)"/>
+    <wire from="(600,280)" to="(620,280)"/>
+    <wire from="(600,370)" to="(630,370)"/>
+    <wire from="(620,250)" to="(620,280)"/>
+    <wire from="(620,250)" to="(650,250)"/>
+    <wire from="(630,370)" to="(630,400)"/>
+    <wire from="(630,400)" to="(650,400)"/>
+    <wire from="(630,420)" to="(630,490)"/>
+    <wire from="(630,420)" to="(650,420)"/>
+    <wire from="(640,290)" to="(640,340)"/>
+    <wire from="(640,290)" to="(650,290)"/>
+    <wire from="(640,340)" to="(730,340)"/>
+    <wire from="(640,360)" to="(640,380)"/>
+    <wire from="(640,360)" to="(740,360)"/>
+    <wire from="(640,380)" to="(650,380)"/>
+    <wire from="(710,270)" to="(740,270)"/>
+    <wire from="(710,400)" to="(730,400)"/>
+    <wire from="(730,340)" to="(730,400)"/>
+    <wire from="(730,400)" to="(780,400)"/>
+    <wire from="(740,270)" to="(740,360)"/>
+    <wire from="(740,270)" to="(760,270)"/>
+    <wire from="(760,270)" to="(760,450)"/>
+    <wire from="(760,270)" to="(790,270)"/>
+    <wire from="(780,210)" to="(780,400)"/>
+    <wire from="(780,400)" to="(790,400)"/>
+  </circuit>
+  <vhdl appearance="logisim_evolution" name="jk_ff">library ieee;
+use ieee.std_logic_1164.all;
+
+entity jk_ff is
+    port (
+        J    : in  std_logic;
+        clk  : in  std_logic;
+        K    : in  std_logic;
+        CLRn : in  std_logic;
+        Q    : out std_logic;
+        Qn   : out std_logic
+    );
+end jk_ff;
+
+architecture behavioral of jk_ff is
+    signal q_int : std_logic := '0';
+    signal jk    : std_logic_vector(1 downto 0);
+begin
+    jk &lt;= J &amp; K;
+
+    -- CLRn is active-low and asynchronous (same as the gate circuit)
+    process (clk, CLRn)
+    begin
+        if CLRn = '0' then
+            q_int &lt;= '0';                             -- Clear
+        elsif rising_edge(clk) then
+            case jk is
+                when "00"   =&gt; q_int &lt;= q_int;        -- Hold
+                when "01"   =&gt; q_int &lt;= '0';          -- Reset
+                when "10"   =&gt; q_int &lt;= '1';          -- Set
+                when "11"   =&gt; q_int &lt;= not q_int;    -- Toggle
+                when others =&gt; q_int &lt;= q_int;
+            end case;
+        end if;
+    end process;
+
+    Q  &lt;= q_int;
+    Qn &lt;= not q_int;
+end behavioral;</vhdl>
+</project>
